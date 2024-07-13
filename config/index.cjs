@@ -24,7 +24,7 @@ const USER_CONFIG = {
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: 'oD0Yo6S6T36fxpKpok1QqaVZ6apY',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
-      useTemplateId: 'a3k4hPuQ6q_3n04Y8lja-A0w2Q_ADY3wivXy0tYKrHg',
+      useTemplateId: 'XoLaESEcIM-B2A1gHpvoa2d6ZxoY8FtIj5iwCFcjEVQ',
       // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
       horoscopeDate: '12-27',
       festivals: [
@@ -48,6 +48,36 @@ const USER_CONFIG = {
         { keyword: 'marry_day', date: '2026-09-09' },
       ],
     },
+    {
+        // 想要发送的人的名字
+        name: '小岐',
+        // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
+        id: 'oD0Yo6ap2uyfPcNyRvYp_cXx-UBk',
+        // 使用微信测试号：你想对他发送的模板消息的模板ID
+        useTemplateId: 'XoLaESEcIM-B2A1gHpvoa2d6ZxoY8FtIj5iwCFcjEVQ',
+        // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
+        horoscopeDate: '12-27',
+        festivals: [
+          // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
+          {
+            type: '*生日', name: '宝贝', year: '2002', date: '10-16',
+          },
+          // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+          {
+            type: '生日', name: '晚晚', year: '2002', date: '11-20',
+          },
+          {
+            type: '节日', name: '相识纪念日', year: '2024', date: '06-24',
+          },
+        ],
+        // 我们在一起已经有xxxx天了的配置
+        customizedDateList: [
+          // 在一起的日子
+          { keyword: 'love_day', date: '2024-06-24' },
+          // 结婚纪念日
+          { keyword: 'marry_day', date: '2026-09-09' },
+        ],
+      },
   ],
 
 
